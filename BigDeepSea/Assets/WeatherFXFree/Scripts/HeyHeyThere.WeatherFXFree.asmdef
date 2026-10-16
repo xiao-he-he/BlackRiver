@@ -1,0 +1,6 @@
+{
+    "name": "HeyHeyThere.WeatherFXFree",
+    "rootNamespace": "HeyHeyThere.WeatherFXFree",
+    "references": ["UnityEngine.UI"],
+    "autoReferenced": true
+}

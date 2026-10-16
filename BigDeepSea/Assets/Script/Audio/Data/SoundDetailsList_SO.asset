@@ -1,0 +1,130 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c483f6bf96baf04a80a577d00d5eec2, type: 3}
+  m_Name: SoundDetailsList_SO
+  m_EditorClassIdentifier: 
+  soundDetailsList:
+  - soundName: 1
+    soundClip: {fileID: 8300000, guid: ea4652aa9b1a0b5489550ffb0193e284, type: 3}
+    soundPitchMin: 0.263
+    soundPitchMax: 0.644
+    soundVolume: 1
+  - soundName: 1
+    soundClip: {fileID: 8300000, guid: d4977489813b5004cbf6e5007c0efbb7, type: 3}
+    soundPitchMin: 0.303
+    soundPitchMax: 0.653
+    soundVolume: 1
+  - soundName: 1
+    soundClip: {fileID: 8300000, guid: 4106cef7d2cf1514badb2f700b8da09c, type: 3}
+    soundPitchMin: 0.8
+    soundPitchMax: 1
+    soundVolume: 1
+  - soundName: 1
+    soundClip: {fileID: 8300000, guid: 1c877accf869a22449d5f628561f3cf0, type: 3}
+    soundPitchMin: 0.319
+    soundPitchMax: 0.635
+    soundVolume: 1
+  - soundName: 2
+    soundClip: {fileID: 8300000, guid: 96be65a94e796be4a86f4f3de7e77beb, type: 3}
+    soundPitchMin: 0.253
+    soundPitchMax: 0.679
+    soundVolume: 1
+  - soundName: 2
+    soundClip: {fileID: 8300000, guid: e82efe2b4dd5e234eaed0433ab242c89, type: 3}
+    soundPitchMin: 0.31
+    soundPitchMax: 0.661
+    soundVolume: 1
+  - soundName: 2
+    soundClip: {fileID: 8300000, guid: f56e7072d3629634db6388e2ab9e04a7, type: 3}
+    soundPitchMin: 0.3
+    soundPitchMax: 0.692
+    soundVolume: 1
+  - soundName: 2
+    soundClip: {fileID: 8300000, guid: bd8a76b03a0d4f74399de8e596ffce4b, type: 3}
+    soundPitchMin: 0.25
+    soundPitchMax: 0.639
+    soundVolume: 1
+  - soundName: 3
+    soundClip: {fileID: 8300000, guid: 2e754837275d26442a3e0ed6cde6eb24, type: 3}
+    soundPitchMin: 0.241
+    soundPitchMax: 0.604
+    soundVolume: 1
+  - soundName: 3
+    soundClip: {fileID: 8300000, guid: 445516bb72706bf46a8cd449b7aa9fb0, type: 3}
+    soundPitchMin: 0.275
+    soundPitchMax: 0.626
+    soundVolume: 1
+  - soundName: 3
+    soundClip: {fileID: 8300000, guid: 0dd5588ad39f8d746b5b44e726f3a1ac, type: 3}
+    soundPitchMin: 0.316
+    soundPitchMax: 0.719
+    soundVolume: 1
+  - soundName: 3
+    soundClip: {fileID: 8300000, guid: 80bb0829d154c184e8f6da429ba8e14b, type: 3}
+    soundPitchMin: 0.398
+    soundPitchMax: 0.802
+    soundVolume: 1
+  - soundName: 3
+    soundClip: {fileID: 8300000, guid: 130155071d076dd468950192fa1d52f0, type: 3}
+    soundPitchMin: 0.357
+    soundPitchMax: 0.82
+    soundVolume: 1
+  - soundName: 3
+    soundClip: {fileID: 8300000, guid: 87dd34d8b083fac42bb0e11a842c05ec, type: 3}
+    soundPitchMin: 0.363
+    soundPitchMax: 0.683
+    soundVolume: 1
+  - soundName: 3
+    soundClip: {fileID: 8300000, guid: 42d4ce7d79fb0574e8624c396ac793f4, type: 3}
+    soundPitchMin: 0.319
+    soundPitchMax: 0.78
+    soundVolume: 1
+  - soundName: 3
+    soundClip: {fileID: 8300000, guid: e9673d4cbcca73949b5da0aa642582f3, type: 3}
+    soundPitchMin: 0.272
+    soundPitchMax: 0.617
+    soundVolume: 1
+  - soundName: 3
+    soundClip: {fileID: 8300000, guid: 03efe822ec861654f9436ea10b5a28ba, type: 3}
+    soundPitchMin: 0.281
+    soundPitchMax: 0.679
+    soundVolume: 1
+  - soundName: 4
+    soundClip: {fileID: 8300000, guid: 03efe822ec861654f9436ea10b5a28ba, type: 3}
+    soundPitchMin: 0.354
+    soundPitchMax: 0.732
+    soundVolume: 1
+  - soundName: 5
+    soundClip: {fileID: 8300000, guid: 03efe822ec861654f9436ea10b5a28ba, type: 3}
+    soundPitchMin: 0.234
+    soundPitchMax: 0.516
+    soundVolume: 1
+  - soundName: 6
+    soundClip: {fileID: 8300000, guid: dd8faf2b94041dd40bd4528d29d0e5dc, type: 3}
+    soundPitchMin: 0.225
+    soundPitchMax: 0.542
+    soundVolume: 1
+  - soundName: 7
+    soundClip: {fileID: 8300000, guid: 1c1dd0f1531ebb64abf4ef0221364b06, type: 3}
+    soundPitchMin: 0.05
+    soundPitchMax: 0.2
+    soundVolume: 0.928
+  - soundName: 8
+    soundClip: {fileID: 8300000, guid: e264018ff1133d34d9cd4d3b3a71b13e, type: 3}
+    soundPitchMin: 0.05
+    soundPitchMax: 0.2
+    soundVolume: 0.9
+  - soundName: 9
+    soundClip: {fileID: 8300000, guid: f60698cb14cbf4a4eb5dad9b99726786, type: 3}
+    soundPitchMin: 0.05
+    soundPitchMax: 0.2
+    soundVolume: 0.9

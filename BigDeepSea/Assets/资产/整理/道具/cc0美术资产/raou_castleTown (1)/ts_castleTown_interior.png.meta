@@ -1,0 +1,1482 @@
+fileFormatVersion: 2
+guid: e3a0d1f3f865e9d41af378e8921b4e15
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7162074562924171108
+    second: ts_castleTown_interior_0
+  - first:
+      213: 2868579234077342570
+    second: ts_castleTown_interior_1
+  - first:
+      213: 9027634863015724266
+    second: ts_castleTown_interior_2
+  - first:
+      213: 8843088945315856698
+    second: ts_castleTown_interior_3
+  - first:
+      213: 4644661405454222109
+    second: ts_castleTown_interior_4
+  - first:
+      213: -4178525173161152356
+    second: ts_castleTown_interior_5
+  - first:
+      213: -5214235755920397021
+    second: ts_castleTown_interior_6
+  - first:
+      213: -6558634427246044792
+    second: ts_castleTown_interior_7
+  - first:
+      213: 5358985946804224837
+    second: ts_castleTown_interior_8
+  - first:
+      213: 3628836016371702402
+    second: ts_castleTown_interior_9
+  - first:
+      213: -8050479394938629602
+    second: ts_castleTown_interior_10
+  - first:
+      213: -3461806293081905488
+    second: ts_castleTown_interior_11
+  - first:
+      213: 6935395122862070922
+    second: ts_castleTown_interior_12
+  - first:
+      213: 8112780973073123171
+    second: ts_castleTown_interior_13
+  - first:
+      213: -8865858426831202986
+    second: ts_castleTown_interior_14
+  - first:
+      213: -1858012102031410679
+    second: ts_castleTown_interior_15
+  - first:
+      213: -5140666021722229124
+    second: ts_castleTown_interior_16
+  - first:
+      213: 1831562620105627919
+    second: ts_castleTown_interior_17
+  - first:
+      213: 8130268096080452638
+    second: ts_castleTown_interior_18
+  - first:
+      213: -8552911757988048744
+    second: ts_castleTown_interior_19
+  - first:
+      213: 1583952050979316415
+    second: ts_castleTown_interior_20
+  - first:
+      213: -2685348896303728363
+    second: ts_castleTown_interior_21
+  - first:
+      213: 7833242299367737075
+    second: ts_castleTown_interior_22
+  - first:
+      213: 4320973532780198890
+    second: ts_castleTown_interior_23
+  - first:
+      213: -4608780581198685216
+    second: ts_castleTown_interior_24
+  - first:
+      213: -8600526924793496243
+    second: ts_castleTown_interior_25
+  - first:
+      213: 5795300671014238700
+    second: ts_castleTown_interior_26
+  - first:
+      213: 5865854593877272922
+    second: ts_castleTown_interior_27
+  - first:
+      213: 7023387268040125321
+    second: ts_castleTown_interior_28
+  - first:
+      213: 8097389440229028323
+    second: ts_castleTown_interior_29
+  - first:
+      213: 5426242700255412764
+    second: ts_castleTown_interior_30
+  - first:
+      213: -7001325033853161005
+    second: ts_castleTown_interior_31
+  - first:
+      213: -4555651669507222171
+    second: ts_castleTown_interior_32
+  - first:
+      213: -303719708908561736
+    second: ts_castleTown_interior_33
+  - first:
+      213: -5691458028259910129
+    second: ts_castleTown_interior_34
+  - first:
+      213: -3236831671271210213
+    second: ts_castleTown_interior_35
+  - first:
+      213: -8967751912451303948
+    second: ts_castleTown_interior_36
+  - first:
+      213: 8731245208400966451
+    second: ts_castleTown_interior_37
+  - first:
+      213: -338044860004291740
+    second: ts_castleTown_interior_38
+  - first:
+      213: -8836606978839427180
+    second: ts_castleTown_interior_39
+  - first:
+      213: 1485927492689616778
+    second: ts_castleTown_interior_40
+  - first:
+      213: -2993464872331901850
+    second: ts_castleTown_interior_41
+  - first:
+      213: 3692274383877698745
+    second: ts_castleTown_interior_42
+  - first:
+      213: -715461950550483888
+    second: ts_castleTown_interior_43
+  - first:
+      213: 770105662993905967
+    second: ts_castleTown_interior_44
+  - first:
+      213: 3528878083057418780
+    second: ts_castleTown_interior_45
+  - first:
+      213: 5588825411110910422
+    second: ts_castleTown_interior_46
+  - first:
+      213: -5383975467197246798
+    second: ts_castleTown_interior_47
+  - first:
+      213: 1415803026552807788
+    second: ts_castleTown_interior_48
+  - first:
+      213: 637777060889263118
+    second: ts_castleTown_interior_49
+  - first:
+      213: 5183862328127547406
+    second: ts_castleTown_interior_50
+  - first:
+      213: 3133507883386173792
+    second: ts_castleTown_interior_51
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ts_castleTown_interior_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 175
+        width: 320
+        height: 177
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c903b0e91233b9c90800000000000000
+      internalID: -7162074562924171108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_1
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 146
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6bfd317d9d3fc720800000000000000
+      internalID: 2868579234077342570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 161
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae40cf3d31a984d70800000000000000
+      internalID: 9027634863015724266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_3
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 161
+        width: 13
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a314cb60b86f8ba70800000000000000
+      internalID: 8843088945315856698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_4
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 162
+        width: 14
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13c01690f6257040800000000000000
+      internalID: 4644661405454222109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_5
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 144
+        width: 34
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c90b3b86e75e206c0800000000000000
+      internalID: -4178525173161152356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_6
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 159
+        width: 24
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32d6939c43053a7b0800000000000000
+      internalID: -5214235755920397021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_7
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 159
+        width: 26
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8891a50dcbc0bf4a0800000000000000
+      internalID: -6558634427246044792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_8
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 130
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54383935351fe5a40800000000000000
+      internalID: 5358985946804224837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_9
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 111
+        width: 50
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28a9af761273c5230800000000000000
+      internalID: 3628836016371702402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_10
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 147
+        width: 34
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12d411c4a3f64090800000000000000
+      internalID: -8050479394938629602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_11
+      rect:
+        serializedVersion: 2
+        x: 119
+        y: 115
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b624a3948135ffc0800000000000000
+      internalID: -3461806293081905488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_12
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 144
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8c9b237e197f3060800000000000000
+      internalID: 6935395122862070922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_13
+      rect:
+        serializedVersion: 2
+        x: 243
+        y: 101
+        width: 26
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3674298cf43669070800000000000000
+      internalID: 8112780973073123171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_14
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 100
+        width: 14
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65592dfebb426f480800000000000000
+      internalID: -8865858426831202986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_15
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 101
+        width: 12
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a7a0e56d30736e0800000000000000
+      internalID: -1858012102031410679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_16
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 101
+        width: 12
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c76735a5d7fa8a8b0800000000000000
+      internalID: -5140666021722229124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 82
+        width: 31
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f09974bbf740b6910800000000000000
+      internalID: 1831562620105627919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_18
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 82
+        width: 31
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1c1193e1c384d070800000000000000
+      internalID: 8130268096080452638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_19
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 112
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8905cd54214fd4980800000000000000
+      internalID: -8552911757988048744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_20
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 112
+        width: 12
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb2afdb8ff35bf510800000000000000
+      internalID: 1583952050979316415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_21
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 65
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51934d90869bbbad0800000000000000
+      internalID: -2685348896303728363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_22
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 71
+        width: 12
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f6c0657e5445bc60800000000000000
+      internalID: 7833242299367737075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_23
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 83
+        width: 34
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeb7a39d88e27fb30800000000000000
+      internalID: 4320973532780198890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_24
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 83
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb1fe1da725a00c0800000000000000
+      internalID: -4608780581198685216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 83
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d4d3086545ac4a880800000000000000
+      internalID: -8600526924793496243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_26
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 56
+        width: 97
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce9f266614b0d6050800000000000000
+      internalID: 5795300671014238700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_27
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 37
+        width: 40
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a59e52caca3b76150800000000000000
+      internalID: 5865854593877272922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_28
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 31
+        width: 130
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 98b688f3285187160800000000000000
+      internalID: 7023387268040125321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_29
+      rect:
+        serializedVersion: 2
+        x: 175
+        y: 65
+        width: 34
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e1b9d84bc4bf5070800000000000000
+      internalID: 8097389440229028323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_30
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 48
+        width: 26
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c12c7c58cf2ed4b40800000000000000
+      internalID: 5426242700255412764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_31
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 47
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d1f120f9fb46de90800000000000000
+      internalID: -7001325033853161005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_32
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 48
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5655b9681f217c0c0800000000000000
+      internalID: -4555651669507222171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_33
+      rect:
+        serializedVersion: 2
+        x: 211
+        y: 47
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ba583fa888f8cbf0800000000000000
+      internalID: -303719708908561736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_34
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 1
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f0ed583f311e301b0800000000000000
+      internalID: -5691458028259910129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_35
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 17
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1345249eb67413d0800000000000000
+      internalID: -3236831671271210213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_36
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 15
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f5928816252c8380800000000000000
+      internalID: -8967751912451303948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_37
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 2
+        width: 34
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3333295c14d9b2970800000000000000
+      internalID: 8731245208400966451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_38
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 31
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46b2c49adf50f4bf0800000000000000
+      internalID: -338044860004291740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_39
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 31
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497c98665c01e5580800000000000000
+      internalID: -8836606978839427180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_40
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 31
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f50cb8e231f9410800000000000000
+      internalID: 1485927492689616778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_41
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 31
+        width: 17
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6640c050f831576d0800000000000000
+      internalID: -2993464872331901850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_42
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 15
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b4fd485df79d3330800000000000000
+      internalID: 3692274383877698745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 113
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c512b852b2216f0800000000000000
+      internalID: -715461950550483888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_44
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f29b4423507ffaa00800000000000000
+      internalID: 770105662993905967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_45
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c128c447be719f030800000000000000
+      internalID: 3528878083057418780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_46
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d931fcb91f7f8d40800000000000000
+      internalID: 5588825411110910422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_47
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1
+        width: 12
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b25a4e86d64845b0800000000000000
+      internalID: -5383975467197246798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_48
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 1
+        width: 24
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c616a95f951f5a310800000000000000
+      internalID: 1415803026552807788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_49
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 0
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0c72389bd6d9d800800000000000000
+      internalID: 637777060889263118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_50
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2
+        width: 32
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e0862987257c0f740800000000000000
+      internalID: 5183862328127547406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ts_castleTown_interior_51
+      rect:
+        serializedVersion: 2
+        x: 306
+        y: 0
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0697e1261d47c7b20800000000000000
+      internalID: 3133507883386173792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ts_castleTown_interior_0: -7162074562924171108
+      ts_castleTown_interior_1: 2868579234077342570
+      ts_castleTown_interior_10: -8050479394938629602
+      ts_castleTown_interior_11: -3461806293081905488
+      ts_castleTown_interior_12: 6935395122862070922
+      ts_castleTown_interior_13: 8112780973073123171
+      ts_castleTown_interior_14: -8865858426831202986
+      ts_castleTown_interior_15: -1858012102031410679
+      ts_castleTown_interior_16: -5140666021722229124
+      ts_castleTown_interior_17: 1831562620105627919
+      ts_castleTown_interior_18: 8130268096080452638
+      ts_castleTown_interior_19: -8552911757988048744
+      ts_castleTown_interior_2: 9027634863015724266
+      ts_castleTown_interior_20: 1583952050979316415
+      ts_castleTown_interior_21: -2685348896303728363
+      ts_castleTown_interior_22: 7833242299367737075
+      ts_castleTown_interior_23: 4320973532780198890
+      ts_castleTown_interior_24: -4608780581198685216
+      ts_castleTown_interior_25: -8600526924793496243
+      ts_castleTown_interior_26: 5795300671014238700
+      ts_castleTown_interior_27: 5865854593877272922
+      ts_castleTown_interior_28: 7023387268040125321
+      ts_castleTown_interior_29: 8097389440229028323
+      ts_castleTown_interior_3: 8843088945315856698
+      ts_castleTown_interior_30: 5426242700255412764
+      ts_castleTown_interior_31: -7001325033853161005
+      ts_castleTown_interior_32: -4555651669507222171
+      ts_castleTown_interior_33: -303719708908561736
+      ts_castleTown_interior_34: -5691458028259910129
+      ts_castleTown_interior_35: -3236831671271210213
+      ts_castleTown_interior_36: -8967751912451303948
+      ts_castleTown_interior_37: 8731245208400966451
+      ts_castleTown_interior_38: -338044860004291740
+      ts_castleTown_interior_39: -8836606978839427180
+      ts_castleTown_interior_4: 4644661405454222109
+      ts_castleTown_interior_40: 1485927492689616778
+      ts_castleTown_interior_41: -2993464872331901850
+      ts_castleTown_interior_42: 3692274383877698745
+      ts_castleTown_interior_43: -715461950550483888
+      ts_castleTown_interior_44: 770105662993905967
+      ts_castleTown_interior_45: 3528878083057418780
+      ts_castleTown_interior_46: 5588825411110910422
+      ts_castleTown_interior_47: -5383975467197246798
+      ts_castleTown_interior_48: 1415803026552807788
+      ts_castleTown_interior_49: 637777060889263118
+      ts_castleTown_interior_5: -4178525173161152356
+      ts_castleTown_interior_50: 5183862328127547406
+      ts_castleTown_interior_51: 3133507883386173792
+      ts_castleTown_interior_6: -5214235755920397021
+      ts_castleTown_interior_7: -6558634427246044792
+      ts_castleTown_interior_8: 5358985946804224837
+      ts_castleTown_interior_9: 3628836016371702402
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

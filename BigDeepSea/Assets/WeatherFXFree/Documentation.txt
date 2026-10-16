@@ -1,0 +1,45 @@
+Weather FX Free
+
+Documentation. 3 animated 2D weather effects, each one shader drawn by one WeatherFX
+component: no textures, no particles.
+
+  Resources/Weather FX Free/   the shaders, one per effect
+  Scripts/WeatherFX.cs   Add, Set, Place, FadeIn, Stop
+  Scripts/WeatherSystem.cs   weather states, cross-faded: Change, Weather, the forecast
+  Demo/WeatherFXFreeDemo.unity   a pixel-art landscape in 12 moods and a toggle per effect; its code
+                         in Scripts/Demo/, its landscapes in DemoArt/
+
+Use:
+  var rain = WeatherFX.Add("rain");          // covers the camera's view and follows it
+  WeatherFX.Add("fog").Set("density", 0.8f).FadeIn(3f);
+  rain.Stop(2f);                             // fades out, then destroys its object
+
+Or add a WeatherFX component to an object and pick its Effect: it shows in the editor too. To keep
+settings in the scene, make a material of the effect's shader and give it to the component.
+
+Effects (WeatherFX.Effects lists them): rain, snow, fog.
+
+With Size at zero an effect covers the main camera's view (orthographic or perspective, at the
+object's depth) and follows it, its pattern staying put in the world.
+A Size in units draws a rect from the transform, its top-left corner, right and down.
+
+Settings: Set("density", 0.8f), Set("color", Color.white), Get("wind"): the shader's properties, by
+their snake_case names ("ground_fog") or the shader's ("GroundFog", "_GroundFog"). Every effect has
+Intensity (0 to 2, which FadeIn and Stop drive), Speed, Seed (Add picks one at random), ColorSteps
+and PixelSize. Patterns are sized in world pixels, 100 to a unit (WeatherFX.PixelsPerUnit).
+
+Drawing order is the renderer's sorting order: Add gives each effect 100 and up in the order above,
+later ones over earlier ones.
+
+Rain splashes where it meets its "ground" (0 to 1 down its rect; 1 for none).
+
+Pixel art: set WeatherFX.DefaultPixelSize = 4 once and every effect draws in 4x4 world-pixel
+blocks with hard-edged alpha (or give one effect its own PixelSize). ColorSteps posterizes.
+
+Weather states: put a WeatherSystem on an object and, in play, Change("storm", 6f) fades out the
+effects the state doesn't have and fades in the ones it does (WeatherSystem.States; Offered lists
+the ones this package has). Weather sets it over Fade; Ground places the rain's splashes and the
+lightning; a forecast of weighted states changes it on its own every ChangeEvery seconds.
+
+Needs Unity 6.3 or later, in any render pipeline: the shaders are unlit, tested in Built-in, URP
+(2D and Universal Renderer) and HDRP. The demo runs on either input handler.

@@ -1,0 +1,115 @@
+﻿Database,SMS Dialogue Database,,
+Author,,,
+Version,,,
+Description,,,
+,,,
+---Conversations---,,,
+,,,
+Conversation 1_1,Heihe_1,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+小女孩_1_1,小女孩,,呼...外面真冷啊。不过和奶奶靠在一起就很温暖
+奶奶_1_2,奶奶,,等以后你长大了，就要嫌弃奶奶身上有老人味喽～
+奶奶_1_3,奶奶,,（奶奶说这话的时候，眼睛笑成一个弯弯）
+,,,
+Conversation 2_1,Heihe_2,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+笨笨狼_2_1,笨笨狼,,（庞大的笨笨狼摇着尾巴跑来了，在你身上蹭来蹭去）
+小女孩_2_2,小女孩,,诶？是笨笨狼！我回来啦，想我没有？
+笨笨狼_2_3,笨笨狼,,（笨笨狼哼唧哼唧地蹭着你）
+笨笨狼_2_4,笨笨狼,,（笨笨狼用它的大舌头舔你，你的脸颊感到一股热气）
+小女孩_2_5,小女孩,,哈哈哈哈....好啦好啦
+小女孩_2_6,小女孩,,（你摸了摸笨笨狼）
+笨笨狼_2_7,笨笨狼,,（哼唧哼唧地蹭着你）
+小女孩_2_8,小女孩,,（你又摸了摸笨笨狼）
+笨笨狼_2_9,笨笨狼,,（翻肚皮！）
+小女孩_2_10,小女孩,,（你双摸了摸笨笨狼）
+小女孩_2_11,小女孩,,（你摸了好久笨笨狼，它终于冷静下来了）
+,,,
+Conversation 3_1,Heihe_3,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+奶奶_3_1,奶奶,,你先自己休息一会儿吧，奶奶去做饭
+奶奶_3_2,奶奶,,今天特地去镇上买了牛肉，做土豆牛肉，今天你放假了，好好犒劳你一下！
+小女孩_3_3,小女孩,,好！那你先忙吧奶奶
+,,,
+Conversation 4_1,Heihe_4,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+笨笨狼_4_1,笨笨狼,,（笨笨狼把眼睛抬起来，含情脉脉地看着你）
+,,,
+Conversation 5_1,Heihe_5,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+奶奶_5_1,奶奶,,牛肉还要再炖一会。你先在家里转转呗，你上学这几个月，家里多了挺多新东西的。
+,,,
+Conversation 6_1,Heihe_6,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+奶奶_6_1,奶奶,,尝尝味道怎么样？
+小女孩_6_2,小女孩,,（你舀了一勺牛肉搭着米饭吃下，土豆绵密吸汁，牛腩软烂浓香，感觉上学的疲惫消散了好多）
+小女孩_6_3,小女孩,,好吃！比学校里的饭好多了
+奶奶_6_4,奶奶,,你喜欢吃就好。对了，快过年了，你爸爸妈妈过年前就从城里打工回来。
+小女孩_6_5,小女孩,,哦～那他们会给我带礼物吗？
+奶奶_6_6,奶奶,,那奶奶就不知道咯，你现在打个电话问他们呗。
+,,,
+Conversation 7_1,Heihe_7,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+小女孩_7_1,小女孩,,喂，爸爸妈妈？
+爸爸妈妈_7_2,爸爸妈妈,,喂，你放假回家啦。
+小女孩_7_3,小女孩,,对呀对呀，最近在学校可累了。你们什么时候回来呀？
+爸爸妈妈_7_4,爸爸妈妈,,嗯...大概还有二十多天吧？你在家乖，听奶奶的话
+小女孩_7_5,小女孩,,好的！那你们回来的时候会给我带礼物吗
+爸爸妈妈_7_6,爸爸妈妈,,肯定会给你带呀，哪年没有给你带？好啦，我们这儿还有点活要干，先挂啦
+小女孩_7_7,小女孩,,嘿嘿，爸爸妈妈最好了！拜拜！
+,,,
+Conversation 8_1,Heihe_8,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+奶奶_8_1,奶奶,,其实奶奶也给你准备了礼物。
+奶奶_8_2,奶奶,,之后你可能就要去城里上高中，不在奶奶身边了，奶奶希望你能一直平平安安，开开心心的
+小女孩_8_3,小女孩,,嗯嗯，谢谢奶奶！
+奶奶_8_4,奶奶,,快吃饭吧，饭都快凉了
+小女孩_8_5,小女孩,,（今天的菜除了土豆牛肉，还有炒白菜和酥油茶，味道都很好。像是...回忆中家里的味道）
+笨笨狼_8_6,笨笨狼,,（笨笨狼大概是闻到香味了，不知道什么时候已经在桌边趴下了）
+小女孩_8_7,小女孩,,（你和奶奶一起吃着饭，有一搭没一搭地聊着，邻居家谁家结婚了、谁搬走了、笨笨狼放羊的时候没看路摔了个大跟头之类...）
+小女孩_8_8,小女孩,,（诸如此类牧区常见的琐事）
+小女孩_8_9,小女孩,,（......）
+,,,
+Conversation 9_1,Heihe_9,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+旁白_9_1,旁白,,（下雨了，淅沥沥的）
+奶奶_9_2,奶奶,,下雨了啊，去把窗子关上吧
+小女孩_9_3,小女孩,,好的
+,,,
+Conversation 10_1,Heihe_10,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+小女孩_10_1,小女孩,,诶？奶奶？
+小女孩_10_2,小女孩,,笨笨狼？
+小女孩_10_3,小女孩,,你们都去哪了？
+,,,
+Conversation 11_1,Heihe_11,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+小女孩_11_1,小女孩,,奶奶？你去哪了？不要吓我
+,,,
+Conversation 12_1,Heihe_12,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+小女孩_12_1,小女孩,,有人吗？发生什么事了？
+,,,
+Conversation 13_1,Heihe_13,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+小女孩_13_1,小女孩,,奶奶..？
+,,,
+Conversation 14_1,Heihe_14,,
+Description,,,
+entrytag,Actor,Description,Dialogue Text
+小女孩_14_1,小女孩,,笨笨狼？你醒醒？
+小女孩_14_2,小女孩,,（你用力地摇晃笨笨狼）
+笨笨狼_14_3,笨笨狼,,（笨笨狼没有任何反应）
