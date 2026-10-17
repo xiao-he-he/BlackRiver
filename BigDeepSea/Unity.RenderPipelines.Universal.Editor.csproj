@@ -117,8 +117,8 @@
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Converter\InitializeConverterContext.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\ShaderGUI\ShaderGraphLitGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Tools\Converters\PPv2\EffectConverters\ColorGradingConverter.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\2D\Shadows\ShadowCaster2DShapeTool.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\2D\CompositeShadowCaster2DEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\2D\Shadows\ShadowCaster2DShapeTool.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\2D\Converter\URP2DConverterUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\ShaderGUI\ShadergraphSpriteGUI.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\ShaderGUI\ShaderGraphTerrainLitGUI.cs" />
@@ -178,8 +178,8 @@
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Decal\CreateDecalProjector.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\ShaderGraph\AssetCallbacks\CreateLitShaderGraph.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\VFXGraph\VFXURPBinder.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\AssetPostProcessors\ShaderGraphMaterialsUpdater.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\ShaderGraph\Targets\UniversalSubTarget.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\AssetPostProcessors\ShaderGraphMaterialsUpdater.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\LightExplorer.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\BuildProcessors\URPBuildData.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Analytics\AssetReimporterAnalytic.cs" />
@@ -231,8 +231,8 @@
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Camera\UniversalRenderPipelineCameraUI.Output.Drawers.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Tools\Converters\PPv2\EffectConverters\LensDistortionConverter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Decal\ProjectedTransform.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Tools\MaterialUpgrader\MaterialUpgraderProviders.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Tools\MaterialUpgrader\UpgradeUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Tools\MaterialUpgrader\MaterialUpgraderProviders.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Tools\Converters\RenderSettingsConverter.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\2D\Converter\BuiltInToURP2DMaterialUpgrader.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Editor\Tools\Converters\PPv2\PPv2ConversionIndexers.cs" />
@@ -992,6 +992,14 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AiEditorToolsSdk">
+      <HintPath>Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Modules\Unity.AI.Toolkit.Sdk\Editor\AiEditorToolsSdk.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
@@ -1536,10 +1544,10 @@
     <ProjectReference Include="Unity.UnifiedRayTracing.Runtime.csproj" />
     <ProjectReference Include="Unity.PathTracing.Runtime.csproj" />
     <ProjectReference Include="Unity.SurfaceCache.Runtime.csproj" />
-    <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
-    <ProjectReference Include="UnityEditor.TestRunner.csproj" />
+    <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.TestRunner.csproj" />
+    <ProjectReference Include="UnityEditor.TestRunner.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

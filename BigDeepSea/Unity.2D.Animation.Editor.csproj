@@ -210,9 +210,9 @@
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\SpriteMeshData\BoneWeightExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\WeightPainterToolWrapper.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\HorizontalToggleTools.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\Selection\IBoneSelection.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\UI\WeightToolbar.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SpriteLib\SpriteLibraryEditor\SpriteLibraryAssetPostprocessor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\Selection\IBoneSelection.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SpriteLib\SpriteSwapOverlay\LabelContainer.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\SkinningCache\CharacterPartCacheExtensions.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\LayoutOverlay\ScrollableToolbar.cs" />
@@ -223,8 +223,8 @@
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\Selectors\CircleVertexSelector.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\Undo\UnityEngineUndo.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\UpgradeTools\AnimClipUpgrader.cs" />
-    <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\SkeletonTool\SkeletonToolView.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\SkinningCache\MeshPreviewCache.cs" />
+    <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\SkeletonTool\SkeletonToolView.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SpriteLib\SpriteLibraryPropertyString.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SpriteSkin\BoneEditor.cs" />
     <Compile Include="Library\PackageCache\com.unity.2d.animation@011d329ac58b\Editor\SkinningModule\IMGUI\SkeletonView.cs" />
@@ -920,6 +920,14 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AiEditorToolsSdk">
+      <HintPath>Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Modules\Unity.AI.Toolkit.Sdk\Editor\AiEditorToolsSdk.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
@@ -1456,10 +1464,10 @@
     <ProjectReference Include="Unity.Burst.csproj" />
     <ProjectReference Include="Unity.Collections.csproj" />
     <ProjectReference Include="Unity.2D.Triangulation.Runtime.csproj" />
-    <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
-    <ProjectReference Include="UnityEditor.TestRunner.csproj" />
+    <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.TestRunner.csproj" />
+    <ProjectReference Include="UnityEditor.TestRunner.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

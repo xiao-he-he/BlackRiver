@@ -50,8 +50,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Runtime\Overrides\ColorAdjustments.cs" />
-    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Runtime\Decal\Entities\DecalEntityManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Runtime\Passes\ScreenSpaceAmbientOcclusionPass.cs" />
+    <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Runtime\Decal\Entities\DecalEntityManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Runtime\Overrides\ScreenSpaceLensFlare.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Runtime\History\RawColorHistory.cs" />
     <Compile Include="Library\PackageCache\com.unity.render-pipelines.universal@13e5115b98bf\Runtime\Passes\PostProcess\TemporalAntiAliasingPostProcessPass.cs" />
@@ -874,6 +874,14 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AiEditorToolsSdk">
+      <HintPath>Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Modules\Unity.AI.Toolkit.Sdk\Editor\AiEditorToolsSdk.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
@@ -1399,8 +1407,8 @@
     <ProjectReference Include="Unity.UnifiedRayTracing.Runtime.csproj" />
     <ProjectReference Include="Unity.PathTracing.Runtime.csproj" />
     <ProjectReference Include="Unity.SurfaceCache.Runtime.csproj" />
-    <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
+    <ProjectReference Include="UnityEditor.UI.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>

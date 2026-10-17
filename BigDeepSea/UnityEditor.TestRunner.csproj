@@ -49,11 +49,12 @@
     <Analyzer Include="E:\unity\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestLaunchers\RemotePlayerTestController.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestRun\Tasks\Platform\PlatformSpecificCleanupTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestRun\Tasks\Scene\RemoveAdditionalUntitledSceneTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestSettings\TestSettings.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestRunner\Utils\CachingTestListProvider.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\AssemblyInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\UnityTestProtocol\UnityTestProtocolListener.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestLaunchers\PlatformSetup\Switch2PlatformSetup.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestRunner\Utils\EditorCompilationInterfaceProxy.cs" />
@@ -280,8 +281,8 @@
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestRunner\Utils\TestListJob.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestRunnerWindowSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\CommandLineTest\Executer.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestRun\Tasks\GenerateContextTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\UnityTestProtocol\Messages\TestFinishedMessage.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestRun\Tasks\GenerateContextTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestLaunchers\Helpers\DelayedCallback.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\UnityTestProtocol\Data\BuildSettings.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestLaunchers\PlatformSetup\StadiaPlatformSetup.cs" />
@@ -291,7 +292,6 @@
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestLaunchers\PlayerLauncher.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\GUI\Views\TestListGUIBase.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\UnityTestProtocol\IUtpLogger.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestLaunchers\RemotePlayerTestController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\UnityEditor.TestRunner.asmdef" />

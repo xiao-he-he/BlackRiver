@@ -203,9 +203,9 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Actions\Menus\TimelineContextMenu.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\DirectorNamedColor.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\treeview\ManipulationsTracks.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Items\ItemsGroup.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Manipulators\AddDelete\AddDeleteItemModeReplace.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Manipulators\Sequence\EaseClip.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Items\ItemsGroup.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\inspectors\TimeFieldDrawer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Utilities\PreviewedBindings.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Utilities\StyleNormalColorOverride.cs" />
@@ -216,8 +216,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Animation\AnimationTrackActions.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\treeview\Drawers\Layers\ItemsLayer.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Items\ItemsUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Actions\IAction.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\treeview\ItemGui\TimelineMarkerGUI.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Actions\IAction.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Animation\CurvesProxy.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Manipulators\Cursors\TimelineCursors.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\inspectors\BuiltInCurvePresets.cs" />
@@ -288,10 +288,10 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Manipulators\Trim\TrimItemModeRipple.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Window\TimelineWindow_HeaderGui.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Extensions\AnimationTrackExtensions.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Utilities\AnimatedParameterCache.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\inspectors\ClipInspector\ClipInspectorSelectionInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Utilities\FrameRateDisplayUtility.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Manipulators\Sequence\SelectAndMoveItem.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Utilities\AnimatedParameterCache.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Recording\TimelineRecording_PlayableAsset.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Animation\BindingTreeViewDataSource.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Signals\TreeView\SignalReceiverItem.cs" />
@@ -299,8 +299,8 @@
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Window\TimelineWindow_TimeArea.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Manipulators\Sequence\MarkerHeaderTrackManipulator.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Audio\AudioPlayableAssetEditor.cs" />
-    <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\inspectors\AnimationTrackInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\TimelineUtility.cs" />
+    <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\inspectors\AnimationTrackInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\inspectors\DirectorNamedColorInspector.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Trackhead.cs" />
     <Compile Include="Library\PackageCache\com.unity.timeline@8cd8509afae5\Editor\Localization\Localization.cs" />
@@ -959,6 +959,14 @@
       <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@4dfd81071c64\Runtime\Newtonsoft.Json.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AiEditorToolsSdk">
+      <HintPath>Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Modules\Unity.AI.Toolkit.Sdk\Editor\AiEditorToolsSdk.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
       <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
@@ -1486,10 +1494,10 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Unity.Timeline.csproj" />
-    <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
-    <ProjectReference Include="UnityEditor.TestRunner.csproj" />
+    <ProjectReference Include="UnityEditor.UI.csproj" />
     <ProjectReference Include="UnityEngine.TestRunner.csproj" />
+    <ProjectReference Include="UnityEditor.TestRunner.csproj" />
   </ItemGroup>
   <Import Project="Sdk.targets" Sdk="Microsoft.NET.Sdk" />
   <ItemGroup>
