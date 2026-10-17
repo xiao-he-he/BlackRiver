@@ -209,18 +209,10 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.mathematics": {
-<<<<<<< Updated upstream
       "version": "1.4.0",
       "depth": 2,
       "source": "builtin",
       "dependencies": {}
-=======
-      "version": "1.3.3",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
->>>>>>> Stashed changes
     },
     "com.unity.multiplayer.center": {
       "version": "1.0.1",
