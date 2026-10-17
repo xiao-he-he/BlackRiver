@@ -49,15 +49,16 @@
     <Analyzer Include="E:\unity\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@21a28c3a6c83\Tests\TestFixture\AssemblyInfo.cs" />
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@21a28c3a6c83\Tests\TestFixture\ScopedDisposable.cs" />
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@21a28c3a6c83\Tests\TestFixture\AssetDatabaseUtils.cs" />
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@21a28c3a6c83\Tests\TestFixture\WinUserInput.cs" />
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@21a28c3a6c83\Tests\TestFixture\InputTestRuntime.cs" />
-    <Compile Include="Library\PackageCache\com.unity.inputsystem@21a28c3a6c83\Tests\TestFixture\InputTestFixture.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194\Tests\TestFixture\AssemblyInfo.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194\Tests\TestFixture\ScopedDisposable.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194\Tests\TestFixture\AssetDatabaseUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194\Tests\TestFixture\WinUserInput.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194\Tests\TestFixture\InputTestRuntime.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194\Tests\TestFixture\InputTestStateManager.cs" />
+    <Compile Include="Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194\Tests\TestFixture\InputTestFixture.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Library\PackageCache\com.unity.inputsystem@21a28c3a6c83\Tests\TestFixture\Unity.InputSystem.TestFramework.asmdef" />
+    <None Include="Library\PackageCache\com.unity.inputsystem@7a4e1a2a8194\Tests\TestFixture\Unity.InputSystem.TestFramework.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -350,10 +351,6 @@
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
       <HintPath>E:\unity\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.VRModule">
-      <HintPath>E:\unity\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.VectorGraphicsModule">

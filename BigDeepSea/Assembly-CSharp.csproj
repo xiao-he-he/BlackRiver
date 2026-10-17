@@ -55,6 +55,7 @@
     <Compile Include="Assets\Script\ItemManager.cs" />
     <Compile Include="Assets\Script\Light\Logic\LightControl.cs" />
     <Compile Include="Assets\Script\Utillties\Enum.cs" />
+    <Compile Include="Assets\SpotlightUI3\Scripts\UI3ButtonFeedback.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics2D.cs" />
     <Compile Include="Assets\Script\Audio\Logic\Sound.cs" />
     <Compile Include="Assets\Script\Animation\AnimationEvent.cs" />
@@ -76,6 +77,7 @@
     <Compile Include="Assets\Script\TileMapData\SeaData.cs" />
     <Compile Include="Assets\Script\Audio\Logic\AudioMananger.cs" />
     <Compile Include="Assets\Script\Light\Logic\LightManager.cs" />
+    <Compile Include="Assets\script_xiaohehe\PrologueSceneFader.cs" />
     <Compile Include="Assets\Script\Box\Box.cs" />
     <Compile Include="Assets\script_xiaohehe\WindSailController.cs" />
     <Compile Include="Assets\RainMaker\Demo\DemoScript.cs" />
@@ -83,8 +85,10 @@
     <Compile Include="Assets\script_xiaohehe\PushBox.cs" />
     <Compile Include="Assets\Script\Dialogue\Logic\DialogueController.cs" />
     <Compile Include="Assets\Script\Audio\Data\SoundDetailsList_SO.cs" />
+    <Compile Include="Assets\SpotlightUI3\Scripts\UI3Controller.cs" />
     <Compile Include="Assets\Script\GameManager.cs" />
     <Compile Include="Assets\script_xiaohehe\CameraZoneMove.cs" />
+    <Compile Include="Assets\script_xiaohehe\next.cs" />
     <Compile Include="Assets\Script\TileMapData\StoneData.cs" />
     <Compile Include="Assets\Script\Dialogue\Data\DialoguePiece.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleEPOOutline.cs" />
@@ -94,6 +98,7 @@
     <Compile Include="Assets\Script\PoolManager.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleAudio.cs" />
     <Compile Include="Assets\Script\Light\Data\LightPattenListSO.cs" />
+    <Compile Include="Assets\PlayerController.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModulePhysics.cs" />
     <Compile Include="Assets\Script\Transition\TransitionManager.cs" />
     <Compile Include="Assets\DOTween\Modules\DOTweenModuleSprite.cs" />
@@ -432,10 +437,6 @@
       <HintPath>E:\unity\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="UnityEngine.VRModule">
-      <HintPath>E:\unity\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="UnityEngine.VectorGraphicsModule">
       <HintPath>E:\unity\Editor\Data\Managed\UnityEngine\UnityEngine.VectorGraphicsModule.dll</HintPath>
       <Private>False</Private>
@@ -697,7 +698,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.visualscripting@4edfcc09512f\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
@@ -1246,10 +1247,10 @@
     <ProjectReference Include="Unity.2D.Tilemap.Extras.Editor.csproj" />
     <ProjectReference Include="Unity.VisualStudio.Editor.csproj" />
     <ProjectReference Include="Unity.2D.Tilemap.Editor.csproj" />
-    <ProjectReference Include="Unity.InputSystem.ForUI.csproj" />
     <ProjectReference Include="Unity.RenderPipelines.GPUDriven.Runtime.csproj" />
     <ProjectReference Include="Unity.VisualScripting.State.Editor.csproj" />
     <ProjectReference Include="Unity.RenderPipelines.Universal.Shaders.csproj" />
+    <ProjectReference Include="Unity.InputSystem.ForUI.csproj" />
     <ProjectReference Include="UnityEngine.UI.csproj" />
     <ProjectReference Include="HFDownloader.csproj" />
     <ProjectReference Include="Unity.RenderPipelines.Universal.Runtime.csproj" />
@@ -1265,6 +1266,7 @@
     <ProjectReference Include="UnityEditor.UI.Analytics.csproj" />
     <ProjectReference Include="Cinemachine.csproj" />
     <ProjectReference Include="Unity.2D.IK.Runtime.csproj" />
+    <ProjectReference Include="Unity.InputSystem.ForUI.Editor.csproj" />
     <ProjectReference Include="Unity.AI.Assistant.Agent.Dynamic.Extension.Editor.csproj" />
     <ProjectReference Include="Plugins.Baedrick.ColoredHeaderCreator.csproj" />
     <ProjectReference Include="Unity.2D.Animation.Editor.csproj" />
@@ -1285,6 +1287,7 @@
     <ProjectReference Include="Unity.RenderPipelines.Core.Runtime.csproj" />
     <ProjectReference Include="Unity.AI.Assistant.Annotations.Editor.csproj" />
     <ProjectReference Include="Unity.AI.Assistant.Runtime.csproj" />
+    <ProjectReference Include="Unity.PlasticSCM.Editor.Assistant.csproj" />
     <ProjectReference Include="Unity.2D.Tilemap.Extras.csproj" />
     <ProjectReference Include="Unity.VisualScripting.Flow.Editor.csproj" />
     <ProjectReference Include="Unity.2D.IK.Editor.csproj" />

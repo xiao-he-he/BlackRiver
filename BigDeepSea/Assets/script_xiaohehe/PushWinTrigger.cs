@@ -9,6 +9,8 @@ public class PushWinTrigger : MonoBehaviour
 
     private bool hasWon = false;
 
+    public bool HasWon => hasWon;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (hasWon) return;

@@ -175,8 +175,8 @@
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestRun\Tasks\Events\RegisterTestRunCallbackEventsTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\GUI\TestAssets\TestScriptAssetsCreator.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestLaunchers\PlatformSetup\XboxOnePlatformSetup.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\CommandLineTest\ResultsSavingCallbacks.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\Api\Filter.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\CommandLineTest\ResultsSavingCallbacks.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestRun\Tasks\EditModeRunTask.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\TestLaunchers\Helpers\PostbuildCleanupAttributeFinder.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEditor.TestRunner\UnityTestProtocol\ITestRunnerApiMapper.cs" />

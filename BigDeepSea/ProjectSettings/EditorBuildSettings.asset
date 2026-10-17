@@ -5,22 +5,37 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/PersistentScene.unity
+  - enabled: 0
+    path: Assets/New Folder/PersistentScene.unity
     guid: 56e0103db21640741adbfc21719bdea7
-  - enabled: 1
-    path: Assets/Scenes/UI.unity
+  - enabled: 0
+    path: Assets/New Folder/UI.unity
     guid: 2ea1827ab7f082841a7f3dfbfacff689
-  - enabled: 1
-    path: Assets/Scenes/Scene0.unity
+  - enabled: 0
+    path: Assets/New Folder/Scene0.unity
     guid: 6a1a57d1c216e1b41833021c8d724820
-  - enabled: 1
-    path: Assets/Scenes/SceneTwo.unity
+  - enabled: 0
+    path: Assets/New Folder/SceneTwo.unity
     guid: c1f2d3bdabadd214fbc855118e016abf
-  - enabled: 1
-    path: Assets/Scenes/SceneThree.unity
+  - enabled: 0
+    path: Assets/New Folder/SceneThree.unity
     guid: 73859328f1c2ade419d18c67b6dba43a
-  - enabled: 1
-    path: Assets/Scenes/SceneFour.unity
+  - enabled: 0
+    path: Assets/New Folder/SceneFour.unity
     guid: 0ec08c3a7315e9a4db1f8c3697c1f27d
+  - enabled: 1
+    path: "Assets/Scenes/\u5E8F\u7AE01.unity"
+    guid: 6e8e0a827fe51fb49825b45a475972b4
+  - enabled: 1
+    path: "Assets/Scenes/\u5E8F\u7AE02.unity"
+    guid: efeae7901d0f46b44b9187439c96edca
+  - enabled: 1
+    path: "Assets/Scenes/\u5E8F\u7AE03.unity"
+    guid: 12efb99bd103795428e08288c7b9b8f6
+  - enabled: 1
+    path: "Assets/Scenes/\u5E8F\u7AE04.unity"
+    guid: f8456cbf495dd644994e9eacd0291943
+  - enabled: 1
+    path: Assets/Scenes/home.unity
+    guid: 8c9cfa26abfee488c85f1582747f6a02
   m_configObjects: {}

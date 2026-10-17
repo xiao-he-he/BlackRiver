@@ -175,8 +175,8 @@
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEngine.TestRunner\Assertions\LogAssert.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEngine.TestRunner\TestRunner\RemoteHelpers\RemoteTestResultData.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEngine.TestRunner\NUnitExtensions\Commands\ParametrizedIgnoreCommand.cs" />
-    <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnityOneTimeSetUpAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEngine.TestRunner\NUnitExtensions\BaseDelegator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEngine.TestRunner\NUnitExtensions\Attributes\UnityOneTimeSetUpAttribute.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEngine.TestRunner\NUnitExtensions\Filters\AssemblyNameFilter.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEngine.TestRunner\NUnitExtensions\IAsyncTestAssemblyBuilder.cs" />
     <Compile Include="Library\PackageCache\com.unity.test-framework@76560ee600cb\UnityEngine.TestRunner\NUnitExtensions\Attributes\EnumeratorHelper.cs" />
@@ -487,10 +487,6 @@
     </Reference>
     <Reference Include="UnityEngine.VFXModule">
       <HintPath>E:\unity\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
-    <Reference Include="UnityEngine.VRModule">
-      <HintPath>E:\unity\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="UnityEngine.VectorGraphicsModule">

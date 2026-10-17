@@ -204,9 +204,9 @@
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Blocks\Implementations\Position\PositionDepth.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Expressions\VFXExpressionMath.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Inspector\VFXCustomAttributeDescriptorEditor.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Slots\Implementations\VFXSlotTexture3D.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Operators\Implementations\SampleMesh.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Operators\Implementations\PerParticleTotalTime.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Slots\Implementations\VFXSlotTexture3D.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Operators\Implementations\TransformMatrix.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Compiler\VFXExpressionMapper.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Operators\Implementations\RectangularToPolar.cs" />
@@ -292,8 +292,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Operators\Implementations\Noise.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Deprecated\PositionTorusDeprecated.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Operators\Implementations\RemapToNegOnePosOne.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\GraphView\Elements\VFXEditableDataAnchor.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Deprecated\SetCustomAttribute.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\GraphView\Elements\VFXEditableDataAnchor.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Blocks\Implementations\Velocity\VelocitySpherical.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Types\VFXBoxGizmos.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Blocks\Implementations\Velocity\VelocityRandomize.cs" />
@@ -307,8 +307,8 @@
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Slots\Implementations\VFXSlotGradient.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\GraphView\Elements\Controllers\VFXOperatorAnchorController.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Operators\Implementations\ChangeSpace.cs" />
-    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\VFXSystemNames.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Operators\VFXOperator.cs" />
+    <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\VFXSystemNames.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\VFXCustomAttributeDescriptor.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\Models\Contexts\Implementations\VFXStaticMeshOutput.cs" />
     <Compile Include="Library\PackageCache\com.unity.visualeffectgraph@1d000c792c1e\Editor\GraphView\Elements\Controllers\VFXSettingController.cs" />
@@ -1269,15 +1269,15 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="TextMateSharpPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\Lib\Editor\TextMateSharp\TextMateSharpPlastic.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4\Lib\Editor\TextMateSharp\TextMateSharpPlastic.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="TextMateSharpPlastic.Grammars">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\Lib\Editor\TextMateSharp\TextMateSharpPlastic.Grammars.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4\Lib\Editor\TextMateSharp\TextMateSharpPlastic.Grammars.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.YamlDotNet">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.visualscripting@4edfcc09512f\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="DOTweenEditor">
@@ -1293,35 +1293,35 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\Lib\Editor\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4\Lib\Editor\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="unityplastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4\Lib\Editor\unityplastic.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="OnigwrapPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\Lib\Editor\TextMateSharp\Onigwrap\OnigwrapPlastic.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4\Lib\Editor\TextMateSharp\Onigwrap\OnigwrapPlastic.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\Lib\Editor\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4\Lib\Editor\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\Lib\Editor\log4netPlastic.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@4628d2ba6ea4\Lib\Editor\log4netPlastic.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.IonicZip">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.visualscripting@4edfcc09512f\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System.IO.Hashing">
       <HintPath>Library\PackageCache\com.unity.collections@5b6ebd78ccc0\Unity.Collections.Tests\System.IO.Hashing\System.IO.Hashing.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="unityplastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@0b1559bcd34e\Lib\Editor\unityplastic.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="Unity.VisualScripting.Antlr3.Runtime">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.visualscripting@4edfcc09512f\Runtime\VisualScripting.Flow\Dependencies\NCalc\Unity.VisualScripting.Antlr3.Runtime.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json">
@@ -1333,7 +1333,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="Unity.VisualScripting.TextureAssets">
-      <HintPath>Library\PackageCache\com.unity.visualscripting@8bed5ad90189\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
+      <HintPath>Library\PackageCache\com.unity.visualscripting@4edfcc09512f\Editor\VisualScripting.Core\EditorAssetResources\Unity.VisualScripting.TextureAssets.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Mono.Cecil">

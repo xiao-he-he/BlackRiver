@@ -87,9 +87,9 @@
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ChatElements\FunctionCall\FindProjectAssetsFunctionCallElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\ConversationReloadManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ChatElements\FunctionCall\Interactions\PlanApprovalFooterContent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ChatElements\ChatElementBlock\ChatElementBlockPlan.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\Settings\SkillWarningBox.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Markup\Renderers\LiteralInlineRenderer.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ChatElements\ChatElementBlock\ChatElementBlockPlan.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ChatElements\SubagentHeaderElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Markup\Renderers\LinkInlineRenderer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\AssistantDropdownEntry.cs" />
@@ -240,9 +240,9 @@
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\AssistantSettingsProvider.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\Virtualization\ChatSlotMeasurer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\IAssistantHostWindow.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ChatElements\FunctionCall\IExpandableRenderer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ContextUsageView.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Markup\FencedContent.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ChatElements\FunctionCall\IExpandableRenderer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Preview\UXMLParser.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\Settings\AssistantSettingsPage.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Data\MessageBlocks\AcpPlanBlockModel.cs" />
@@ -288,8 +288,8 @@
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\AssistantUIConstants.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\Annotations\WindowsGdiCapture.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ChatElements\ChatElementUI.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ManagedTemplate.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Events\EventResubmitPrompt.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ManagedTemplate.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\ContextAttachmentElement.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\AssistantConversationPanel.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\UI\Scripts\Components\Virtualization\ItemAnchor.cs" />

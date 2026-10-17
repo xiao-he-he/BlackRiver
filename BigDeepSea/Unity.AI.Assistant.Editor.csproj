@@ -179,8 +179,8 @@
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\CodeAnalyze\FixMissingSquareBracket.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Service\AssistantGlobal.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\CodeFormat.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Assistant.Conversation.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\CodeBlockUtils.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Assistant.Conversation.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\ServerCompatibility\NotificationsState.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Data\ScreenContextData.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\CodeAnalyze\FixMissingParenthesis.cs" />
@@ -211,8 +211,8 @@
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\GraphGeneration\GraphRefreshManager.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Checkpoint\VcsCommitInfo.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Data\AssistantPrompt.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\SessionBanner\PackageUpdateState.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\CodeAnalyze\FixMissingBrace.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\SessionBanner\PackageUpdateState.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Settings\AssistantProjectPreferences.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Checkpoint\AssistantCheckpoints.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Checkpoint\CheckpointFileChange.cs" />
@@ -231,8 +231,8 @@
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Acp\AcpToolCostCalculator.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\AssistantAssetModificationDelegates.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Context\FolderContextSelection.cs" />
-    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Service\ServiceContainer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Settings\GatewayProjectPreferences.cs" />
+    <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Service\ServiceContainer.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Acp\McpToolApprovalHandler.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\Relay\Acp\AcpSessionError.cs" />
     <Compile Include="Library\PackageCache\com.unity.ai.assistant@1b11b9bfd84a\Editor\Assistant\RunCommand\AgentRunCommand.cs" />
