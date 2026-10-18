@@ -4,6 +4,7 @@ Shader "BigDeepSea/HomeWindowDarkness"
     {
         _MainTex ("Texture", 2D) = "white" {}
         _PlayerHole ("Player Hole", Vector) = (-100000, -100000, 0, 1)
+        _PlayerDarkness ("Player Darkness", Range(0, 1)) = 0.35
         _FireplaceHole ("Fireplace Hole", Vector) = (-100000, -100000, 0, 1)
         _FireplaceVisibility ("Fireplace Visibility", Range(0, 1)) = 0.4
     }
@@ -24,6 +25,7 @@ Shader "BigDeepSea/HomeWindowDarkness"
             #include "UnityCG.cginc"
 
             float4 _PlayerHole;
+            float _PlayerDarkness;
             float4 _FireplaceHole;
             float _FireplaceVisibility;
 
@@ -50,8 +52,9 @@ Shader "BigDeepSea/HomeWindowDarkness"
             half4 frag(VertexOutput input) : SV_Target
             {
                 float2 pixel = input.uv * _ScreenParams.xy;
-                float playerAlpha = smoothstep(_PlayerHole.z,
+                float playerGlow = 1.0 - smoothstep(_PlayerHole.z,
                     _PlayerHole.z + _PlayerHole.w, distance(pixel, _PlayerHole.xy));
+                float playerAlpha = lerp(1.0, _PlayerDarkness, playerGlow);
                 float fireplaceGlow = 1.0 - smoothstep(0.0, max(0.001, _FireplaceHole.z),
                     distance(pixel, _FireplaceHole.xy));
                 float fireplaceAlpha = 1.0 - fireplaceGlow * _FireplaceVisibility;

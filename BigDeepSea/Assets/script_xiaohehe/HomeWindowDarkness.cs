@@ -15,6 +15,9 @@ public class HomeWindowDarkness : MonoBehaviour
     [Tooltip("角色周围的透光半径，数值越大，角色周围能看见的范围越大。")]
     [Min(0.01f)] public float playerLightRadius = 1.5f;
 
+    [Tooltip("角色光圈内黑色滤镜的强度，0 为不压暗，1 为完全黑暗。")]
+    [Range(0f, 1f)] public float playerDarkness = 0.35f;
+
     [Tooltip("烟囱火微光的影响范围。")]
     [Min(0.01f)] public float fireplaceLightRadius = 0.85f;
 
@@ -67,7 +70,7 @@ public class HomeWindowDarkness : MonoBehaviour
         overlay.transform.SetParent(transform, false);
         Canvas canvas = overlay.GetComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        canvas.sortingOrder = short.MaxValue - 1;
+        canvas.sortingOrder = short.MaxValue - 3;
 
         GameObject panel = new GameObject("玩家与篝火透光区域", typeof(RectTransform), typeof(RawImage));
         panel.transform.SetParent(overlay.transform, false);
@@ -99,6 +102,7 @@ public class HomeWindowDarkness : MonoBehaviour
             return;
         }
         darknessMaterial.SetVector("_PlayerHole", GetHole(player, playerLightRadius));
+        darknessMaterial.SetFloat("_PlayerDarkness", playerDarkness);
         darknessMaterial.SetVector("_FireplaceHole", GetHole(fireplace, fireplaceLightRadius));
         darknessMaterial.SetFloat("_FireplaceVisibility", fireplaceVisibility);
     }
