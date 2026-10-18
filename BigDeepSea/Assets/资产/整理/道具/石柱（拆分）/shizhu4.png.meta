@@ -116,12 +116,12 @@ TextureImporter:
       name: shizhu4_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 5
-        width: 68
-        height: 155
+        x: 11
+        y: 33
+        width: 72
+        height: 127
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d68c017e0ebadcf45aa1bf5e613a0e02
     internalID: 0
     vertices: []
     indices: 
