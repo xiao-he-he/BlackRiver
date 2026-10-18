@@ -6,6 +6,20 @@ public class move : MonoBehaviour
     [Header("角色移动")]
     public float moveSpeed = 3f;
 
+    [Header("跳跃")]
+    [Min(0f)] public float jumpHeight = 0.35f;
+    public KeyCode jumpKey = KeyCode.Space;
+    public GameObject jumpForward;
+    public GameObject jumpBack;
+    public GameObject jumpLeft;
+    public GameObject jumpRight;
+
+    [Header("跳跃地面阴影")]
+    public SpriteRenderer jumpShadow;
+    public Vector2 jumpShadowOffset = new Vector2(0.01f, -0.68f);
+    public Vector2 jumpShadowMaxSize = new Vector2(0.72f, 0.18f);
+    [Range(0f, 1f)] public float jumpShadowOpacity = 0.45f;
+
     [Header("推箱子检测")]
     public float pushCheckDistance = 0.65f;
     public LayerMask boxLayer;
@@ -42,6 +56,10 @@ public class move : MonoBehaviour
     private Vector2 lastDirection = Vector2.down;
 
     private bool isPushing;
+    private bool isJumping;
+    private float jumpTimer;
+    private GameObject activeJumpState;
+    private Vector3 jumpStateStartPosition;
     private PushBox nearbyBox;
     private PushBox chargingBox;
     private Vector2 chargingDirection;
@@ -55,13 +73,30 @@ public class move : MonoBehaviour
         rb.gravityScale = 0f;
         rb.freezeRotation = true;
 
+        UpdateJumpShadow(0f);
         ShowState(downIdle);
     }
 
     private void Update()
     {
         ReadInput();
-        CheckPushBox();
+        if (Input.GetKeyDown(jumpKey) && !isJumping)
+        {
+            StartJump();
+        }
+
+        if (isJumping)
+        {
+            UpdateJump();
+            isPushing = false;
+            nearbyBox = null;
+            ResetPushCharge();
+        }
+        else
+        {
+            CheckPushBox();
+        }
+
         UpdateAnimation();
     }
 
@@ -215,6 +250,14 @@ public class move : MonoBehaviour
 
     private void OnDisable()
     {
+        if (activeJumpState != null)
+        {
+            activeJumpState.transform.localPosition = jumpStateStartPosition;
+        }
+
+        isJumping = false;
+        activeJumpState = null;
+        UpdateJumpShadow(0f);
         pushContacts.Clear();
         nearbyBox = null;
         ResetPushCharge();
@@ -222,6 +265,12 @@ public class move : MonoBehaviour
 
     private void UpdateAnimation()
     {
+        if (isJumping)
+        {
+            ShowState(activeJumpState);
+            return;
+        }
+
         if (isPushing)
         {
             if (lastDirection.y > 0f)
@@ -266,7 +315,8 @@ public class move : MonoBehaviour
         {
             upIdle, downIdle, leftIdle, rightIdle,
             upMove, downMove, leftMove, rightMove,
-            upPush, downPush, leftPush, rightPush
+            upPush, downPush, leftPush, rightPush,
+            jumpForward, jumpBack, jumpLeft, jumpRight
         };
 
         foreach (GameObject state in states)
@@ -277,4 +327,82 @@ public class move : MonoBehaviour
             }
         }
     }
+
+    private void StartJump()
+    {
+        Vector2 direction = moveInput != Vector2.zero ? moveInput : lastDirection;
+
+        if (direction.y > 0f)
+            activeJumpState = jumpBack;
+        else if (direction.y < 0f)
+            activeJumpState = jumpForward;
+        else if (direction.x < 0f)
+            activeJumpState = jumpLeft;
+        else
+            activeJumpState = jumpRight;
+
+        if (activeJumpState == null)
+        {
+            return;
+        }
+
+        isJumping = true;
+        jumpTimer = 0f;
+        jumpStateStartPosition = activeJumpState.transform.localPosition;
+        ShowState(activeJumpState);
+    }
+
+    private void UpdateJump()
+    {
+        const float duration = 0.8f;
+        jumpTimer += Time.deltaTime;
+        float progress = Mathf.Clamp01(jumpTimer / duration);
+        float heightRatio = Mathf.Sin(progress * Mathf.PI);
+        float height = heightRatio * jumpHeight;
+        UpdateJumpShadow(jumpHeight > 0f ? heightRatio : 0f);
+
+        if (activeJumpState != null)
+        {
+            activeJumpState.transform.localPosition =
+                jumpStateStartPosition + Vector3.up * height;
+        }
+
+        if (jumpTimer >= duration)
+        {
+            if (activeJumpState != null)
+            {
+                activeJumpState.transform.localPosition = jumpStateStartPosition;
+            }
+
+            isJumping = false;
+            activeJumpState = null;
+            UpdateJumpShadow(0f);
+        }
+    }
+
+    private void UpdateJumpShadow(float heightRatio)
+    {
+        if (jumpShadow == null)
+        {
+            return;
+        }
+
+        heightRatio = Mathf.Clamp01(heightRatio);
+        jumpShadow.enabled = heightRatio > 0f;
+        jumpShadow.transform.localPosition = new Vector3(
+            jumpShadowOffset.x, jumpShadowOffset.y, 0f);
+        Color shadowColor = jumpShadow.color;
+        shadowColor.a = jumpShadowOpacity * heightRatio;
+        jumpShadow.color = shadowColor;
+
+        if (jumpShadow.sprite != null)
+        {
+            Vector2 spriteSize = jumpShadow.sprite.bounds.size;
+            jumpShadow.transform.localScale = new Vector3(
+                Mathf.Max(0f, jumpShadowMaxSize.x) * heightRatio / Mathf.Max(spriteSize.x, 0.0001f),
+                Mathf.Max(0f, jumpShadowMaxSize.y) * heightRatio / Mathf.Max(spriteSize.y, 0.0001f),
+                1f);
+        }
+    }
+
 }
