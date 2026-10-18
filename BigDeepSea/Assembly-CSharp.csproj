@@ -83,6 +83,7 @@
     <Compile Include="Assets\RainMaker\Demo\DemoScript.cs" />
     <Compile Include="Assets\script_xiaohehe\PrayerWheelInteraction.cs" />
     <Compile Include="Assets\script_xiaohehe\PushBox.cs" />
+    <Compile Include="Assets\script_xiaohehe\CameraShake2D.cs" />
     <Compile Include="Assets\Script\Dialogue\Logic\DialogueController.cs" />
     <Compile Include="Assets\Script\Audio\Data\SoundDetailsList_SO.cs" />
     <Compile Include="Assets\SpotlightUI3\Scripts\UI3Controller.cs" />

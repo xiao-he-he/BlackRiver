@@ -806,6 +806,9 @@ MonoBehaviour:
   isSpecialBox: 0
   gridSize: 1
   moveDuration: 0.15
+  windPushDelay: 0.25
+  windShakeDuration: 0.12
+  windShakeMagnitude: 0.04
 --- !u!61 &184555008
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1206,6 +1209,9 @@ MonoBehaviour:
   isSpecialBox: 1
   gridSize: 1
   moveDuration: 0.15
+  windPushDelay: 0.25
+  windShakeDuration: 0.12
+  windShakeMagnitude: 0.04
 --- !u!61 &270217005
 BoxCollider2D:
   m_ObjectHideFlags: 0

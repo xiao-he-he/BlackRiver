@@ -10,6 +10,11 @@ public class move : MonoBehaviour
     public float pushCheckDistance = 0.65f;
     public LayerMask boxLayer;
 
+    [Header("推箱反馈")]
+    [Min(0f)] public float pushHoldDuration = 0.5f;
+    [Min(0f)] public float pushShakeDuration = 0.12f;
+    [Min(0f)] public float pushShakeMagnitude = 0.04f;
+
     [Header("动画状态物体")]
     public GameObject upIdle;
     public GameObject downIdle;
@@ -38,6 +43,9 @@ public class move : MonoBehaviour
 
     private bool isPushing;
     private PushBox nearbyBox;
+    private PushBox chargingBox;
+    private Vector2 chargingDirection;
+    private float pushHoldTimer;
 
     private void Awake()
     {
@@ -98,6 +106,8 @@ public class move : MonoBehaviour
     {
         if (moveInput == Vector2.zero)
         {
+            ResetPushCharge();
+            nearbyBox = null;
             return;
         }
 
@@ -112,6 +122,7 @@ public class move : MonoBehaviour
         nearbyBox = null;
         if (playerCollider == null)
         {
+            ResetPushCharge();
             return;
         }
 
@@ -155,9 +166,37 @@ public class move : MonoBehaviour
 
         if (nearbyBox != null)
         {
-            nearbyBox.TryPush(direction);
             isPushing = true;
+
+            if (chargingBox != nearbyBox || chargingDirection != direction)
+            {
+                chargingBox = nearbyBox;
+                chargingDirection = direction;
+                pushHoldTimer = 0f;
+            }
+
+            pushHoldTimer += Time.deltaTime;
+            if (pushHoldTimer >= pushHoldDuration)
+            {
+                if (nearbyBox.TryPush(direction))
+                {
+                    CameraShake2D.ShakeMainCamera(pushShakeDuration, pushShakeMagnitude);
+                }
+
+                pushHoldTimer = 0f;
+            }
         }
+        else
+        {
+            ResetPushCharge();
+        }
+    }
+
+    private void ResetPushCharge()
+    {
+        chargingBox = null;
+        chargingDirection = Vector2.zero;
+        pushHoldTimer = 0f;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -178,6 +217,7 @@ public class move : MonoBehaviour
     {
         pushContacts.Clear();
         nearbyBox = null;
+        ResetPushCharge();
     }
 
     private void UpdateAnimation()

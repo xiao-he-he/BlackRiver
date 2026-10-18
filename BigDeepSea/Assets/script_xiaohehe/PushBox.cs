@@ -11,6 +11,11 @@ public class PushBox : MonoBehaviour
     public float gridSize = 1f;
     public float moveDuration = 0.15f;
 
+    [Header("风推动反馈")]
+    [Min(0f)] public float windPushDelay = 0.5f;
+    [Min(0f)] public float windShakeDuration = 0.12f;
+    [Min(0f)] public float windShakeMagnitude = 0.04f;
+
     public bool IsMoving { get; private set; }
     public bool IsWindDriven => WindPushZone.IsBoxAffected(this);
     public Vector2 AnchorPosition => (Vector2)transform.position - cellOffset;
@@ -179,11 +184,26 @@ public class PushBox : MonoBehaviour
                 continue;
             }
 
+            if (windPushDelay > 0f)
+            {
+                yield return new WaitForSeconds(windPushDelay);
+            }
+
+            if (currentWindSource == null ||
+                !currentWindSource.Affects(this))
+            {
+                break;
+            }
+
             // 每次尝试移动一格；被挡住就停止
             bool moved = TryMove(currentWindDirection);
 
             if (!moved)
                 break;
+
+            CameraShake2D.ShakeMainCamera(
+                windShakeDuration,
+                windShakeMagnitude);
 
             // 等待本格移动结束，再尝试下一格
             while (IsMoving)

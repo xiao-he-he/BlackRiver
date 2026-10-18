@@ -1116,6 +1116,9 @@ MonoBehaviour:
   boxLayer:
     serializedVersion: 2
     m_Bits: 4096
+  pushHoldDuration: 0.25
+  pushShakeDuration: 0.12
+  pushShakeMagnitude: 0.04
   upIdle: {fileID: 3935932371089243926}
   downIdle: {fileID: 2389353031611242839}
   leftIdle: {fileID: 2343365789781582546}
