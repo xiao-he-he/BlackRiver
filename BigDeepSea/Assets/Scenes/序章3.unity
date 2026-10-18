@@ -342,7 +342,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PrayerWheelInteraction
   sailController: {fileID: 1491243632}
   interactionTrigger: {fileID: 11363839}
-  interactionKey: 102
+  interactionKey: 101
 --- !u!1 &12975012
 GameObject:
   m_ObjectHideFlags: 0

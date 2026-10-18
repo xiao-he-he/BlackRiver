@@ -5,7 +5,7 @@ public class PrayerWheelInteraction : MonoBehaviour
 {
     public WindSailController sailController;
     public Collider2D interactionTrigger;
-    public KeyCode interactionKey = KeyCode.F;
+    public KeyCode interactionKey = KeyCode.E;
 
     private readonly HashSet<Collider2D> playerContacts = new HashSet<Collider2D>();
 
