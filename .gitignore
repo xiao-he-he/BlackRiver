@@ -1,4 +1,4 @@
-﻿**/.vs/
+**/.vs/
 **/bin/
 **/obj/
 **/Library/
@@ -9,3 +9,10 @@
 **/Logs/
 **/UserSettings/
 **/.vs/
+
+# Generated IDE files and local build checks
+**/*.csproj
+**/*.sln
+**/*.slnx
+**/.DS_Store
+**/Assets/__CodexBuildCheck/
