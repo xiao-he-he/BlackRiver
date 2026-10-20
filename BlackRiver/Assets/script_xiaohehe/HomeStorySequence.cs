@@ -16,8 +16,6 @@ public sealed class HomeStorySequence : MonoBehaviour
     [Min(0f)] public float fadeSeconds = 0.8f;
 
     private int dogLine;
-    private bool windowLinePlayed;
-    private bool windowLineFinished;
     private bool introductionFinished;
     private bool finaleStarted;
     private bool dogBubbleClosing;
@@ -74,11 +72,6 @@ public sealed class HomeStorySequence : MonoBehaviour
             dialogue.HideBubble();
         if (dogBubbleClosing && Time.frameCount > dogBubbleClosedFrame)
             dogBubbleClosing = false;
-        if (introductionFinished && !windowLinePlayed && window != null && window.IsClosed && !dialogue.IsBusy)
-        {
-            windowLinePlayed = true;
-            dialogue.Play(new[] { L("女孩", "奶奶？") }, () => windowLineFinished = true);
-        }
     }
 
     public bool OnDogInteract()
@@ -94,11 +87,16 @@ public sealed class HomeStorySequence : MonoBehaviour
         }
         if (window != null && window.IsClosed)
         {
-            if (!windowLineFinished) return false;
-            finaleStarted = true;
-            dialogue.Play(new[] { L("女孩", "……"), L("女孩", "奶奶……") },
+            // Closing the curtain must leave the player free to walk to the dog.
+            // This sequence starts only through the dog's E interaction.
+            finaleStarted = dialogue.Play(new[]
+            {
+                L("女孩", "奶奶？"),
+                L("女孩", "……"),
+                L("女孩", "奶奶……")
+            },
                 () => StartCoroutine(PlayFinale()));
-            return true;
+            return finaleStarted;
         }
 
         var lines = new[]

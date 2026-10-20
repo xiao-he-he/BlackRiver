@@ -73,7 +73,8 @@ public class HomeWindowDarkness : MonoBehaviour
         overlay.transform.SetParent(transform, false);
         Canvas canvas = overlay.GetComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        canvas.sortingOrder = short.MaxValue - 3;
+        // Darken the room, not the dialogue/CG/settings that must remain readable and usable.
+        canvas.sortingOrder = ScenePauseMenu.DialogueSortingOrder - 2;
 
         GameObject panel = new GameObject("玩家与篝火透光区域", typeof(RectTransform), typeof(RawImage));
         panel.transform.SetParent(overlay.transform, false);
