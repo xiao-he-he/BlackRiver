@@ -402,7 +402,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 87293199}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c842f959488e8104b858a96c8ba59579, type: 3}
   m_Name: 
@@ -432,6 +432,7 @@ MonoBehaviour:
   player: {fileID: 986561323}
   familyPhoto: {fileID: -6031897575223760728, guid: 461450dd9b59bcc40ac78b95a27df538, type: 3}
   sceneTransition: {fileID: 87293205}
+  story: {fileID: 732599723}
   photoDuration: 3
 --- !u!1 &137282922
 GameObject:
@@ -4136,6 +4137,99 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10.285714, y: 85.18519}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &732599721
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 732599725}
+  - component: {fileID: 732599724}
+  - component: {fileID: 732599723}
+  - component: {fileID: 732599722}
+  m_Layer: 0
+  m_Name: Home Story
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &732599722
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732599721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c842f959488e8104b858a96c8ba59579, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::next
+  object1: {fileID: 0}
+  nextSceneIndex: 0
+  nextSceneName: "\u795E\u5E99\u8D70\u5ECA"
+  fadeOutDuration: 0.1
+  fadeInDuration: 1.5
+  fadeInEasePower: 1
+  openingFadeDuration: 1.5
+  locked: 1
+--- !u!114 &732599723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732599721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97603cb04ddbe744eb647a679b9ad656, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::HomeStorySequence
+  dialogue: {fileID: 732599724}
+  window: {fileID: 1933511187}
+  dog: {fileID: 87293206}
+  familyPhoto: {fileID: -6031897575223760728, guid: 461450dd9b59bcc40ac78b95a27df538, type: 3}
+  thangkaOne: {fileID: 1813681530906992218, guid: b4bb9a179dd41aa40a08ce19255cada6, type: 3}
+  thangkaTwo: {fileID: -5890209049876178218, guid: 92a1de8c25322214b9f5b7bb6392dc58, type: 3}
+  transition: {fileID: 732599722}
+  oldExit: {fileID: 87293205}
+  fadeSeconds: 0.8
+--- !u!114 &732599724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732599721}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7863afc66bfaca40af5580636208c9b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::Prologue2OpeningDialogue
+  dialoguePanelSprite: {fileID: -2574327458472783965, guid: ce6cf28cf14f83e49b49202f301cf780, type: 3}
+  grandmaPortrait: {fileID: 3635182319360113964, guid: 55dac64b31c34a946bb68f57a265927d, type: 3}
+  girlPortrait: {fileID: -1640799755115247177, guid: 39b7ff4b0f50a394ebbe28cde9a43ae1, type: 3}
+  bubbleSprite: {fileID: 2364959408380342846, guid: 349927e5989b4724796362afe2ba9428, type: 3}
+  dialogueFont: {fileID: 11400000, guid: 4ce87ab450269cb4bbaae4727497eb8d, type: 2}
+  charactersPerSecond: 32
+--- !u!4 &732599725
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 732599721}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &757786265
 GameObject:
   m_ObjectHideFlags: 0
@@ -7754,7 +7848,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702748048}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c842f959488e8104b858a96c8ba59579, type: 3}
   m_Name: 
@@ -9082,3 +9176,4 @@ SceneRoots:
   - {fileID: 1290460326}
   - {fileID: 2064885533}
   - {fileID: 1075950123}
+  - {fileID: 732599725}

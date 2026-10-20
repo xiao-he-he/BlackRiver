@@ -9,18 +9,30 @@ public sealed class HomeDogFamilyPhoto : MonoBehaviour
     public move player;
     public Sprite familyPhoto;
     public next sceneTransition;
+    public HomeStorySequence story;
     [Min(0f)] public float photoDuration = 3f;
 
     public bool IsShowingPhoto { get; private set; }
 
     private void Update()
     {
-        if (Time.timeScale > 0f && Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E) &&
+            (Time.timeScale > 0f || (story != null && story.HasDogBubble)))
             TryInteract();
     }
 
     public bool TryInteract()
     {
+        if (story != null)
+        {
+            if ((Time.timeScale <= 0f && !story.HasDogBubble) ||
+                !player || !interactionTrigger || !interactionTrigger.enabled)
+                return false;
+            var collider = player.GetComponent<Collider2D>();
+            if (!collider || !collider.enabled || interactionTrigger.Distance(collider).distance > 0f)
+                return false;
+            return story.OnDogInteract();
+        }
         if (IsShowingPhoto || !window || !window.IsClosed || !player ||
             !interactionTrigger || !interactionTrigger.enabled || !familyPhoto ||
             !sceneTransition)

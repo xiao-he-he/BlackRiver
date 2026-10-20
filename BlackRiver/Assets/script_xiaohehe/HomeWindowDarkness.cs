@@ -36,7 +36,7 @@ public class HomeWindowDarkness : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(interactionKey))
+        if (Time.timeScale > 0f && Input.GetKeyDown(interactionKey))
         {
             TryInteract();
         }
