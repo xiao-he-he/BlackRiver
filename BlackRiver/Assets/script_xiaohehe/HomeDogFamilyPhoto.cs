@@ -23,6 +23,7 @@ public sealed class HomeDogFamilyPhoto : MonoBehaviour
 
     public bool TryInteract()
     {
+        if (ScenePauseMenu.BlocksDialogueInput) return false;
         if (story != null)
         {
             if ((Time.timeScale <= 0f && !story.HasDogBubble) ||
@@ -59,7 +60,7 @@ public sealed class HomeDogFamilyPhoto : MonoBehaviour
         screen.transform.SetParent(transform, false);
         var canvas = screen.GetComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        canvas.sortingOrder = short.MaxValue - 1;
+        canvas.sortingOrder = ScenePauseMenu.DialogueSortingOrder - 1;
 
         var background = new GameObject("背景", typeof(RectTransform), typeof(Image));
         background.transform.SetParent(screen.transform, false);

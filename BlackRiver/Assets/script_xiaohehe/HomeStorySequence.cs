@@ -190,7 +190,7 @@ public sealed class HomeStorySequence : MonoBehaviour
             typeof(CanvasGroup));
         var canvas = cgRoot.GetComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        canvas.sortingOrder = short.MaxValue - 2;
+        canvas.sortingOrder = ScenePauseMenu.DialogueSortingOrder - 1;
         var scaler = cgRoot.GetComponent<CanvasScaler>();
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
         scaler.referenceResolution = new Vector2(1920, 1080);

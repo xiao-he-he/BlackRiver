@@ -10,12 +10,37 @@ namespace Spotlight.UI3
         [SerializeField] private GameObject volumePopup;
         [SerializeField] private Slider volumeSlider;
         [SerializeField] private TMP_Text volumeValue;
+        [SerializeField] private Button newGameButton;
+        [SerializeField] private Button continueButton;
         private int volumeOpenedFrame = -1;
+        private int helpOpenedFrame = -1;
+        private bool loadingScene;
+
+        public void StartNewGame()
+        {
+            if (!loadingScene) loadingScene = GameProgress.StartNewGame();
+            RefreshContinueButton();
+        }
+
+        public void ContinueGame()
+        {
+            if (!loadingScene) loadingScene = GameProgress.ContinueGame();
+            RefreshContinueButton();
+        }
+
+        private void RefreshContinueButton()
+        {
+            if (continueButton) continueButton.interactable = !loadingScene && GameProgress.CanContinue;
+            if (newGameButton) newGameButton.interactable = !loadingScene;
+        }
 
         public void ShowKeyHelp()
         {
             if (keyHelpPanel)
+            {
                 keyHelpPanel.SetActive(true);
+                helpOpenedFrame = Time.frameCount;
+            }
         }
 
         public void HideKeyHelp()
@@ -36,6 +61,7 @@ namespace Spotlight.UI3
 
         public void QuitGame()
         {
+            PlayerPrefs.Save();
 #if UNITY_EDITOR
             UnityEditor.EditorApplication.isPlaying = false;
 #else
@@ -45,17 +71,24 @@ namespace Spotlight.UI3
 
         private void Awake()
         {
+            float volume = Mathf.Clamp01(PlayerPrefs.GetFloat(ScenePauseMenu.VolumeKey,
+                PlayerPrefs.GetFloat(UI3Controller.MasterVolumePreference, 1f)));
+            AudioListener.volume = volume;
             if (volumeSlider)
             {
-                volumeSlider.value = AudioListener.volume;
+                volumeSlider.SetValueWithoutNotify(volume);
                 volumeSlider.onValueChanged.AddListener(SetVolume);
-                SetVolume(volumeSlider.value);
             }
+            UpdateVolumeLabel(volume);
+            if (newGameButton) newGameButton.onClick.AddListener(StartNewGame);
+            if (continueButton) continueButton.onClick.AddListener(ContinueGame);
+            RefreshContinueButton();
         }
 
         private void Update()
         {
-            if (keyHelpPanel && keyHelpPanel.activeSelf && Input.GetMouseButtonDown(0))
+            if (keyHelpPanel && keyHelpPanel.activeSelf &&
+                Time.frameCount > helpOpenedFrame && Input.anyKeyDown)
                 HideKeyHelp();
 
             if (volumePopup && volumePopup.activeSelf &&
@@ -72,9 +105,25 @@ namespace Spotlight.UI3
 
         private void SetVolume(float value)
         {
+            value = Mathf.Clamp01(value);
             AudioListener.volume = value;
+            PlayerPrefs.SetFloat(ScenePauseMenu.VolumeKey, value);
+            PlayerPrefs.SetFloat(UI3Controller.MasterVolumePreference, value);
+            PlayerPrefs.Save();
+            UpdateVolumeLabel(value);
+        }
+
+        private void UpdateVolumeLabel(float value)
+        {
             if (volumeValue)
                 volumeValue.text = Mathf.RoundToInt(value * 100f) + "%";
+        }
+
+        private void OnDestroy()
+        {
+            if (newGameButton) newGameButton.onClick.RemoveListener(StartNewGame);
+            if (continueButton) continueButton.onClick.RemoveListener(ContinueGame);
+            if (volumeSlider) volumeSlider.onValueChanged.RemoveListener(SetVolume);
         }
     }
 }

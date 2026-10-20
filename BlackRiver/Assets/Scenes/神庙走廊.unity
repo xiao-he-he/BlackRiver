@@ -1477,7 +1477,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 423568689}
   m_OnClick:
     m_PersistentCalls:
@@ -5831,7 +5831,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1543751394}
   m_OnClick:
     m_PersistentCalls:
@@ -6802,6 +6802,9 @@ MonoBehaviour:
   continueButton: {fileID: 1802414069}
   restartButton: {fileID: 1310290057}
   quitButton: {fileID: 1859596304}
+  mainMenuButton: {fileID: 423568688}
+  keyHelpButton: {fileID: 1543751393}
+  keyHelpPrefab: {fileID: 5126133222354434966, guid: 8515a8dafd3ae6149acccdad5d84e6d9, type: 3}
 --- !u!114 &1831974797
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6864,7 +6867,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 32765
+  m_SortingOrder: 32760
   m_TargetDisplay: 0
 --- !u!224 &1831974800
 RectTransform:

@@ -81,14 +81,12 @@ public sealed class EndlessSurvivalMode : MonoBehaviour
 
     public void Retry()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene(gameObject.scene.path);
+        GameProgress.RestartLevel();
     }
 
     public void ReturnToMainMenu()
     {
-        Time.timeScale = 1f;
-        SceneManager.LoadScene("Assets/Scenes/主菜单.unity");
+        GameProgress.ReturnToMainMenu();
     }
 
     private void OnDestroy()

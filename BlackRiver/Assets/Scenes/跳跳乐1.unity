@@ -1449,6 +1449,9 @@ MonoBehaviour:
   continueButton: {fileID: 1811373093}
   restartButton: {fileID: 964119218}
   quitButton: {fileID: 2140090041}
+  mainMenuButton: {fileID: 1879155071}
+  keyHelpButton: {fileID: 2044068870}
+  keyHelpPrefab: {fileID: 5126133222354434966, guid: 8515a8dafd3ae6149acccdad5d84e6d9, type: 3}
 --- !u!114 &801998275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1511,7 +1514,7 @@ Canvas:
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 32765
+  m_SortingOrder: 32760
   m_TargetDisplay: 0
 --- !u!224 &801998278
 RectTransform:
@@ -5356,6 +5359,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BarrageEncounter
   survivalDuration: 20
+  endlessMode: 0
   player: {fileID: 1062692999}
   emitters:
   - {fileID: 1414054504}
@@ -6783,7 +6787,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 1879155072}
   m_OnClick:
     m_PersistentCalls:
@@ -7320,7 +7324,7 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 0
+  m_Interactable: 1
   m_TargetGraphic: {fileID: 2044068871}
   m_OnClick:
     m_PersistentCalls:

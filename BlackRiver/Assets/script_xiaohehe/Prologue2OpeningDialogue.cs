@@ -38,8 +38,6 @@ public class Prologue2OpeningDialogue : MonoBehaviour
     private TMP_Text dialogueText;
     private Image bubbleImage;
     private TMP_Text bubbleText;
-    private float previousTimeScale;
-    private bool previousClockPause;
     private bool ownsPause;
     private Transform bubbleAnchor;
     private PushWinTrigger prologue2Win;
@@ -84,13 +82,9 @@ public class Prologue2OpeningDialogue : MonoBehaviour
         if ((!IsBusy && !IsBubbleVisible) || dialogueRoot == null)
             return;
 
-        // Settings can restore time temporarily; keep it stopped until this conversation closes.
-        if (Time.timeScale != 0f)
-            Time.timeScale = 0f;
-        if (TimeManager.Instance != null)
-            TimeManager.Instance.gameClockPause = true;
+        GamePauseState.EnsurePaused();
 
-        if (!IsBusy) return;
+        if (!IsBusy || ScenePauseMenu.BlocksDialogueInput) return;
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.Return) ||
             Input.GetKeyDown(KeyCode.KeypadEnter) ||
             (Input.GetMouseButtonDown(0) &&
@@ -102,7 +96,7 @@ public class Prologue2OpeningDialogue : MonoBehaviour
 
     public void AdvanceDialogue()
     {
-        if (IsBusy) advanceRequested = true;
+        if (IsBusy && !ScenePauseMenu.BlocksDialogueInput) advanceRequested = true;
     }
 
     public bool Play(Line[] sequence, Action onFinished = null)
@@ -182,6 +176,11 @@ public class Prologue2OpeningDialogue : MonoBehaviour
             float characterProgress = 0f;
             while (visibleCharacters < content.Length)
             {
+                if (ScenePauseMenu.IsSettingsOpen)
+                {
+                    yield return null;
+                    continue;
+                }
                 if (advanceRequested)
                 {
                     visibleCharacters = content.Length;
@@ -198,7 +197,7 @@ public class Prologue2OpeningDialogue : MonoBehaviour
 
             dialogueText.text = content;
             advanceRequested = false;
-            yield return new WaitUntil(() => advanceRequested);
+            yield return new WaitUntil(() => advanceRequested && !ScenePauseMenu.IsSettingsOpen);
         }
 
         dialogueRoot.SetActive(false);
@@ -209,12 +208,8 @@ public class Prologue2OpeningDialogue : MonoBehaviour
 
     private void PauseTime()
     {
-        previousTimeScale = Time.timeScale;
-        previousClockPause = TimeManager.Instance != null && TimeManager.Instance.gameClockPause;
         ownsPause = true;
-        Time.timeScale = 0f;
-        if (TimeManager.Instance != null)
-            TimeManager.Instance.gameClockPause = true;
+        GamePauseState.Acquire(this);
     }
 
     private void BuildDialogueUI()
@@ -223,7 +218,7 @@ public class Prologue2OpeningDialogue : MonoBehaviour
             typeof(RectTransform), typeof(Canvas), typeof(CanvasScaler), typeof(GraphicRaycaster));
         dialogueCanvas = canvasObject.GetComponent<Canvas>();
         dialogueCanvas.renderMode = RenderMode.ScreenSpaceOverlay;
-        dialogueCanvas.sortingOrder = short.MaxValue - 1;
+        dialogueCanvas.sortingOrder = ScenePauseMenu.DialogueSortingOrder;
 
         CanvasScaler scaler = canvasObject.GetComponent<CanvasScaler>();
         scaler.uiScaleMode = CanvasScaler.ScaleMode.ScaleWithScreenSize;
@@ -325,9 +320,7 @@ public class Prologue2OpeningDialogue : MonoBehaviour
         if (!ownsPause)
             return;
 
-        Time.timeScale = previousTimeScale;
-        if (TimeManager.Instance != null)
-            TimeManager.Instance.gameClockPause = previousClockPause;
+        GamePauseState.Release(this);
         ownsPause = false;
     }
 

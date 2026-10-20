@@ -7,10 +7,12 @@ using UnityEngine.Events;
 [RequireComponent(typeof(move))]
 public sealed class StaffAbility : MonoBehaviour
 {
-    // Session state survives scene loads/restarts, but deliberately does not modify a save file.
+    // Session state survives scene loads/restarts and is restored by scene-entry checkpoints.
     public static bool UnlockedThisSession { get; private set; }
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
     private static void ResetSession() => UnlockedThisSession = false;
+
+    public static void RestoreSession(bool unlocked) => UnlockedThisSession = unlocked;
 
     public KeyCode castKey = KeyCode.V;
     [Min(0.01f)] public float castDuration = 1f;
@@ -57,6 +59,7 @@ public sealed class StaffAbility : MonoBehaviour
             return false;
         UnlockedThisSession = true;
         onStaffAcquired.Invoke();
+        GameProgress.SaveCurrentCheckpoint();
         return true;
     }
 
